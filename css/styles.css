@@ -207,14 +207,18 @@ body {
     margin-right: 30px;
 }
 .feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px; 
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: var(--button-background-color);    
 }
 .feature-icon .icon {
-    margin-left: 100px;
-    margin-top: 25px;     
+    display: flex;
+    justify-content: center;
+    align-items: center;       
 }
 
 /* ====================/FEATURE================== */
@@ -301,7 +305,7 @@ body {
     align-items: center;
     gap: 30px;
 }
-.clients-item {
+.clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,22 +313,21 @@ body {
     height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+    color: var(--icon-color);
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-icon {
+    fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
     border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 .clients-link {    
     max-width: 100%;
     max-height: 100%;    
 }
-.clients-icon {
-    fill: var(--icon-color);
-}
-.clients-icon:hover,
-.clients-icon:focus {
-    fill: var(--accent-color);
-}
+
 
 /* ===================/CLIENTS==================== */
 
